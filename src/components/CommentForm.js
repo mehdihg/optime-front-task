@@ -6,6 +6,10 @@ function CommentForm({ text,submitComment, id }) {
     const [handleText,setHandleText]=useState('')
     const handleSubmit=(e)=>{
       e.preventDefault()
+      if(handleText ===""){
+        alert('لطفا دیدگاه خود را بنویسید...')
+        return
+      }
         submitComment(handleText,id)
         
 
@@ -16,7 +20,7 @@ function CommentForm({ text,submitComment, id }) {
     <form className="comment-form">
       <h3>{text}</h3>
       <textarea placeholder="نظر خودت رو بنویس ..." onChange={(e)=>setHandleText(e.target.value)} value={handleText}/>
-      <button onClick={handleSubmit}>ثبت</button>
+      <button onClick={handleSubmit} >ثبت</button>
     </form>
   );
 }
