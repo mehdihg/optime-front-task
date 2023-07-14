@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "vazir";
+  src: local("vazir"),
+   url("./fonts/Vazir.woff") format("woff");
+
+ }
+*{
+  font-family: "vazir";
+}
+body{
+  direction: rtl;
+  width: 80%;
+  margin: 0 auto;
+}
+.comment-form h3{
+margin-top: 20px;
+font-size: 24px;
+}
+.comment-form{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.comment-form textarea{
+  min-height: 100px;
+  margin: 0 0 10px 0;
+  border: 2px solid rgb(169, 78, 255);
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+.comment-form button{
+  width: 120px;
+  padding: 8px 0;
+  background-color: rgb(169, 78, 255);
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+.comment-body{
+ border: 1px solid #8e8e8e;
+ border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0 10px 0;
+
+}
+.comment-user{
+  display: flex;
+  align-items: center;
+}
+.comment-user svg{
+  font-size: 28px;
+}
+.comment-username{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 6px;
+}
+.comment-username span{
+  font-size: 10px;
+}
+.comment-body-buttons{
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+.comment-body-buttons button{
+  background-color: transparent;
+  border: none;
+  color: rgb(169, 78, 255);
+  font-weight: 600;
+}
+.nested-comments{
+  margin-right: 30px;
+}
