@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { ulid } from "ulid";
 import CommentForm from "../components/CommentForm";
 import SingleComment from "./singleComment";
-import GetData from "../utils/getData";
+
 import { useDispatch, useSelector } from "react-redux";
 import { addComment, getComments, loadMoreItems } from "../provider/commentSlice";
 import ReplyComment from "./replyComment";
