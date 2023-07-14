@@ -1,52 +1,76 @@
-@font-face {
-  font-family: "vazir";
-  src: local("vazir"),
-   url("./fonts/Vazir.woff") format("woff");
 
- }
-*{
-  font-family: "vazir";
-}
 body{
   direction: rtl;
   width: 80%;
   margin: 0 auto;
 }
+button{
+  cursor: pointer;
+}
 .comment-form h3{
-margin-top: 20px;
-font-size: 24px;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 900;
 }
 .comment-form{
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
 }
+textarea:focus, input:focus{
+    outline: none;
+}
 .comment-form textarea{
   min-height: 100px;
   margin: 0 0 10px 0;
-  border: 2px solid rgb(169, 78, 255);
-  border-radius: 5px;
+  border: 2px solid #67cdf7;
+  border-radius: 8px;
   padding: 8px 10px;
+  outline: none;
+  
 }
 .comment-form button{
   width: 120px;
   padding: 8px 0;
-  background-color: rgb(169, 78, 255);
-  color: #fff;
+  background-color: transparent;
+  border: 2px solid #67cdf7;
+  color: #000;
   font-size: 18px;
-  border-radius: 5px;
-  border: 1px solid transparent;
+  border-radius: 8px;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
 }
 .comment-body{
- border: 1px solid #8e8e8e;
- border-radius: 5px;
+  border: 2px solid #eaeaea;
+  border-radius: 8px;
   padding: 20px;
-  margin: 20px 0 10px 0;
-
+  margin: 0 0 30px 0;
+  transition: .5s all; 
+}
+.comment-body:hover{
+  border: 2px solid #aaaaaa;
 }
 .comment-user{
   display: flex;
   align-items: center;
+}
+.comment-user .comment-user-avatar{
+  position: relative;
+  background: #cdeefc;
+  border: 2px solid #b1e7ff;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+}
+.comment-user .comment-user-avatar span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -52%);
+  font-weight: 900;
+  font-size: 16px;
 }
 .comment-user svg{
   font-size: 28px;
@@ -60,6 +84,9 @@ font-size: 24px;
 .comment-username span{
   font-size: 10px;
 }
+.comment-item-body{
+  margin: 10px 10px;
+}
 .comment-body-buttons{
   display: flex;
   align-items: center;
@@ -68,9 +95,15 @@ font-size: 24px;
 .comment-body-buttons button{
   background-color: transparent;
   border: none;
-  color: rgb(169, 78, 255);
+  color: #67cdf7;
   font-weight: 600;
+  cursor: pointer;
+  padding: 0 0 0 15px;
+  transition: .5s all; 
+}
+.comment-body-buttons button:hover{
+  color: #3bbaf1;
 }
 .nested-comments{
-  margin-right: 30px;
+  margin-right: 40px;
 }
