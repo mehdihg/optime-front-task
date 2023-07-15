@@ -78,7 +78,33 @@ const data=[
         userId: "2",
         parentId: null,
         createdAt: "2022-08-16T23:00:33.010+02:00",
+      },      
+      {
+        id: "10",
+        body: "کامنت هشتم",
+        username: "احمد",
+        userId: "2",
+        parentId: null,
+        createdAt: "2022-08-16T23:00:33.010+02:00",
       },
+      {
+        id: "11",
+        body: "کامنت نهم",
+        username: "احمد",
+        userId: "2",
+        parentId: null,
+        createdAt: "2022-10-16T23:00:33.010+02:00",
+      },
+      {
+        id: "12",
+        body: "کامنت دهم",
+        username: "احمد",
+        userId: "2",
+        parentId: null,
+        createdAt: "2022-09-16T23:00:33.010+02:00",
+      },
+      
+      
 
 ]
 export default data
