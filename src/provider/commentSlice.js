@@ -1,10 +1,10 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
+import {  createSlice } from '@reduxjs/toolkit'
 
 
 const initialState = {
   comments: [],
   currentPage: 1,
-  itemsPerPage: 4,
+  itemsPerPage: 5,
   items:[]
 }
 export const commentSlice = createSlice({
@@ -16,6 +16,7 @@ export const commentSlice = createSlice({
       },
       addComment:(state,action)=>{
         state.items.push(action.payload)
+
       },
 
       removeComment:(state,action)=>{
